@@ -236,7 +236,7 @@ end
 
 def winning_team
   hometotal = game_hash[:home][:players].reduce(0){|total,player| total + player[:points]}
-  awaytotal = game_hash[:away][:players].reduce(0){|total,playerpoints| total + player[:points]}
+  awaytotal = game_hash[:away][:players].reduce(0){|total,player| total + player[:points]}
   if hometotal > awaytotal
     return game_hash[:home][:team_name]
   else
