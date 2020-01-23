@@ -107,7 +107,9 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash.
+  game_hash.reduce{|team, teamstats|
+    teamstats
+  }
 end
 
 
