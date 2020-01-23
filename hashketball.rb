@@ -152,5 +152,11 @@ end
 
 def player_numbers(teamname)
   output = []
-  
+  game_hash.each{|place,teamblock|
+    if teamblock[:team_name] == teamname
+      teamblock[:players].each{|player| output << player[:number]
+      }
+    end
+  }
+  return output
 end
