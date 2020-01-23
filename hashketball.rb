@@ -107,9 +107,16 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash.find{|team, teamstats|
-    teamstats[:players].find{|playerstats| playerstats[:player_name] == name}}
-  }
+	output = 0
+	game_hash.each{|team, teamstats|
+    	teamstats[:players].each{|playerstats| 
+    		playerstats[:player_name] == name do 
+    			output = playerstats[:points] 
+    	end
+    }
+}
+	return output
+    p output
 end
 
 
