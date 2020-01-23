@@ -258,7 +258,7 @@ def player_with_longest_name
     	 end
     end
   end
-   # highestscore found
+   # longest name found
    game_hash.each do |team, teamstats|
     teamstats.each do |key,playerstats|
      if key == :players
@@ -271,3 +271,8 @@ def player_with_longest_name
     	end
     end
 end
+
+def long_name_steals_a_ton?
+  stealer = []
+  player_with_longest_name = stealer
+end  
