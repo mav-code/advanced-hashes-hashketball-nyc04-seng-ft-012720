@@ -112,10 +112,10 @@ def num_points_scored(name)
     	teamstats[:players].each{|playerstats| 
     	 playerstats[:player_name] == name ? 
     			output = playerstats[:points] : 
-    
-
+    	}
+  }
 	return output
-}}
+
 end
 
 
