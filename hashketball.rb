@@ -174,5 +174,6 @@ def player_stats(name)
     	end
     end
   end
-  return output.delete(:player_name)
+  output.delete(:player_name)
+  return output
 end
