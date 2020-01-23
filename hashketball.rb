@@ -108,7 +108,7 @@ end
 
 def num_points_scored(name)
   game_hash.find{|team, teamstats|
-    teamstats[:players].find{|
+    teamstats[:players].find{|playerstats| playerstats[:player_name] == name}}
   }
 end
 
