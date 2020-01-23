@@ -174,5 +174,6 @@ def player_stats(name)
     	end
     end
   end
-  
+  output.shift
+  return output
 end
