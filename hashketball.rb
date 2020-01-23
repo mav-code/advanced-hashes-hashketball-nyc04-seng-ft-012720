@@ -197,7 +197,7 @@ def big_shoe_rebounds
     teamstats.each do |key,playerstats|
      if key == :players
     	  playerstats.each do |player|
-    	    if player[:shoe] = largestshoe
+    	    if player[:shoe] == largestshoe
     	      return player[:rebounds]
     	    end
     	   end
