@@ -233,3 +233,31 @@ def most_points_scored
     	end
     end
 end
+
+def winning_team
+  highestscore = 0
+  game_hash.each do |team, teamstats|
+    teamstats.each do |key,playerstats|
+      if key == :players
+    	  playerstats.each do |player|
+    	    if player[:points] > highestscore
+    	      highestscore = player[:points]
+    			  
+    			 end 
+    		end
+    	 end
+    end
+  end
+   # highestscore found
+   game_hash.each do |team, teamstats|
+    teamstats.each do |key,playerstats|
+     if key == :players
+    	  playerstats.each do |player|
+    	    if player[:points] == highestscore
+    	      return player[:player_name]
+    	    end
+    	   end
+    	 end
+    	end
+    end
+end
