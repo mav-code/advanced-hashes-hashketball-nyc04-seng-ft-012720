@@ -235,7 +235,7 @@ def most_points_scored
 end
 
 def winning_team
-  hometotal = game_hash[:home][:players].reduce{|
+  hometotal = game_hash[:home][:players].reduce(0){|
   awaytotal = 0
   
 end
