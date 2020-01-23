@@ -107,8 +107,8 @@ def game_hash
 end
 
 def num_points_scored(name)
-  game_hash.reduce{|team, teamstats|
-    teamstats
+  game_hash.find{|team, teamstats|
+    teamstats[:players].find{|
   }
 end
 
