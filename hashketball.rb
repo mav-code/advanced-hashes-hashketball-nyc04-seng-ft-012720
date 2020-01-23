@@ -113,9 +113,9 @@ def num_points_scored(name)
     	 playerstats[:player_name] == name ? 
     			output = playerstats[:points] : 
     
-}
+
 	return output
-}
+}}
 end
 
 
