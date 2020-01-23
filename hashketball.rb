@@ -177,3 +177,11 @@ def player_stats(name)
   output.delete(:player_name)
   return output
 end
+
+def big_shoe_rebounds
+  game_hash.max{|place,team| 
+    team[:players].max{|player|
+  
+    }
+  }  
+end
