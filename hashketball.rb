@@ -199,4 +199,9 @@ def big_shoe_rebounds
     	  playerstats.each do |player|
     	    if player[:shoe] = largestshoe
     	      return player[:rebounds]
+    	    end
+    	   end
+    	 end
+    	end
+    end
 end
