@@ -167,10 +167,11 @@ def player_stats(name)
       if key == :players
     	  playerstats.each do |player|
     	    if player[:player_name] == name
-    			return player
+    			output = player
     			end 
     		end
     	end
     end
   end
+  
 end
