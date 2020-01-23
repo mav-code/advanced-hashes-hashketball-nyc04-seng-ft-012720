@@ -114,6 +114,7 @@ def num_points_scored(name)
     	    playerstats.each{player}
     	 if player[:player_name] == name do 
     			output = playerstats[:points] end 
+    			end
     	}
   }
 	return output
