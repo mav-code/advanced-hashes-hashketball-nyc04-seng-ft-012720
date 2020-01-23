@@ -167,12 +167,10 @@ def player_stats(name)
       if key == :players
     	  playerstats.each do |player|
     	    if player[:player_name] == name
-    			retun player
+    			return player
     			end 
     		end
     	end
     end
   end
-  output.shift
-  return output
 end
