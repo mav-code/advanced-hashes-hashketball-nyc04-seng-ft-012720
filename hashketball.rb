@@ -149,3 +149,8 @@ def team_names
   game_hash.each{|place,teamblock| output << teamblock[:team_name]}
   return output
 end
+
+def player_numbers(teamname)
+  output = []
+  
+end
