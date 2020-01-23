@@ -112,7 +112,7 @@ def num_points_scored(name)
     	teamstats[:players].each{|key,playerstats|
     	  if key == :players do
     	    playerstats.each{player}
-    	 if playerstats[:player_name] == name do 
+    	 if player[:player_name] == name do 
     			output = playerstats[:points] end 
     	}
   }
