@@ -167,11 +167,10 @@ def player_stats(name)
       if key == :players
     	  playerstats.each do |player|
     	    if player[:player_name] == name
-    			output = player.clone
+    			  output = player.clone
     			end 
     		end
     	end
     end
   end
-  return output
 end
