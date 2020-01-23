@@ -115,6 +115,7 @@ def num_points_scored(name)
     
 }
 	return output
+}
 end
 
 
