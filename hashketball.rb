@@ -143,3 +143,9 @@ def team_colors(teamname)
     end 
   end
 end 
+
+def team_names
+  output = []
+  game_hash.each{|place,teamblock| output << teamblock[:team_name]}
+  return output
+end
