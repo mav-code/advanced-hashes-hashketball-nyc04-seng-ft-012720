@@ -162,13 +162,12 @@ def player_numbers(teamname)
 end
 
 def player_stats(name)
-  output = {}
   game_hash.each do |team, teamstats|
     teamstats.each do |key,playerstats|
       if key == :players
     	  playerstats.each do |player|
     	    if player[:player_name] == name
-    			output << player 
+    			output = player.clone
     			end 
     		end
     	end
