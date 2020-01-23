@@ -179,7 +179,7 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  highestscore = 0
+  largestshoe = 0
   game_hash.each do |team, teamstats|
     teamstats.each do |key,playerstats|
       if key == :players
@@ -207,15 +207,29 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-	game_hash.each do |team, teamstats|
+  highestscore = 0
+  game_hash.each do |team, teamstats|
     teamstats.each do |key,playerstats|
       if key == :players
     	  playerstats.each do |player|
-    	    if player[:player_name] == name
-    			return player[:points] 
-    			end 
-    			end
-    	end
+    	    if player[:points] > highestscore
+    	      highestscore = player[:points]
+    			  
+    			 end 
+    		end
+    	 end
+    end
   end
-end
+   # highestscore found
+   game_hash.each do |team, teamstats|
+    teamstats.each do |key,playerstats|
+     if key == :players
+    	  playerstats.each do |player|
+    	    if player[:points] == highestscore
+    	      return player[:player_name]
+    	    end
+    	   end
+    	 end
+    	end
+    end
 end
