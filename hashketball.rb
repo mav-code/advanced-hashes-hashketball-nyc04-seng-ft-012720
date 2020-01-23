@@ -192,6 +192,7 @@ def big_shoe_rebounds
     	 end
     end
   end
+  return largestshoe
   # largest shoe found
   game_hash.each do |team, teamstats|
     teamstats.each do |key,playerstats|
